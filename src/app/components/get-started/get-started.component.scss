@@ -1,0 +1,69 @@
+.get-started{
+  padding: 100px 0px;
+}
+
+.get-started h1 {
+  color: rgba(100, 100, 100);
+  font-weight: bold;
+}
+
+.get-started p {
+  color: rgba(0, 0, 0, 0.521);
+  margin-bottom: 1rem;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #DD2476 0%, #F05D7B  51%, #DD2476  100%)}
+.btn-grad {
+  border: unset;
+   margin: 10px;
+   padding: 15px 25px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;
+   border-radius: 10px;
+   display: block;
+   width: 250px !important;
+ }
+
+ .btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.row{
+  align-items: center;
+}
+
+.campaign{
+  h1{
+    color: rgba(200, 200, 200);
+  }
+}
+
+.stroke{
+  height: 5px;
+  width: 20%;
+  border-radius: 100%;
+  background-image: linear-gradient(to right, #DD2476 0%, #F05D7B  51%, #DD2476  100%);
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding: 15px;
+
+  li{
+    margin: 10px 0px;
+    color: rgba(200, 200, 200);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .campaign{
+      margin-top: 100px;
+    }
+}

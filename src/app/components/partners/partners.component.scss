@@ -1,0 +1,21 @@
+section{
+  padding: 100px 0px;
+
+  h1{
+    color: rgb(100, 100, 100);
+    font-weight: bold;
+    text-align: center;
+  }
+}
+.icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+}

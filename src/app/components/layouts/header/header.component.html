@@ -1,0 +1,56 @@
+<header>
+  <div class="main-nav" [ngClass]="{fixed: fixedHeader}">
+    <nav>
+      <div class="toggler">
+        <i (click)="toggleNav()" class="fas fa-bars"></i>
+      </div>
+      <div>
+        <a
+        (click)="scroll('home')"
+        class="logo">
+          <img class="mr-2 png" src="assets/images/logo2.png" alt="">
+          <span>Trasels Media</span>
+        </a>
+      </div>
+
+      <div class="nav">
+        <div class="w-100">
+          <div class="links">
+
+            <a class="link"
+            [ngClass]="{'active': activeLink == 'services'? true:false}"
+            (click)="scroll('services')"
+          >Services</a>
+
+            <a
+            [ngClass]="{'active': activeLink == 'about'? true:false}"
+            (click)="scroll('about')"
+            class="link">About</a>
+
+            <a
+            [ngClass]="{'active': activeLink == 'mission'? true:false}"
+            (click)="scroll('mission')"
+            class="link">Mission</a>
+
+            <a
+            [ngClass]="{'active': activeLink == 'clients'? true:false}"
+            (click)="scroll('clients')"
+            class="link">Clients</a>
+
+            <a
+            [ngClass]="{'active': activeLink == 'campaigns'? true:false}"
+            (click)="scroll('campaigns')"
+            class="link">Campaigns</a>
+
+            <a
+            [ngClass]="{'active': activeLink == 'partners'? true:false}"
+            (click)="scroll('partners')"
+            class="link">Partners</a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <app-side-nav></app-side-nav>
+</header>
