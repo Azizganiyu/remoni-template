@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationService } from 'src/app/services/navigation.service';
-import { ScrollService } from 'src/app/services/scroll/scroll.service';
 
 @Component({
   selector: 'app-side-nav',
@@ -13,7 +12,6 @@ export class SideNavComponent implements OnInit {
 
   constructor(
     private navigation: NavigationService,
-    private route : ScrollService
   ) { }
 
   ngOnInit(): void {
@@ -25,10 +23,6 @@ export class SideNavComponent implements OnInit {
 
   closeToggles(){
     this.navigation.toggle(false)
-  }
-
-  scroll(to){
-    this.route.route(to)
   }
 
 }

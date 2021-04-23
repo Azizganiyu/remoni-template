@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ScrollService } from 'src/app/services/scroll/scroll.service';
 
 @Component({
   selector: 'app-banner',
@@ -9,14 +8,9 @@ import { ScrollService } from 'src/app/services/scroll/scroll.service';
 export class BannerComponent implements OnInit {
 
   constructor(
-    private route : ScrollService
   ) { }
 
   ngOnInit(): void {
-  }
-
-  contactUs(){
-    this.route.route('footer')
   }
 
 }

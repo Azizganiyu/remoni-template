@@ -18,7 +18,7 @@ export function app(): express.Express {
   const fs = require('fs');
 
   // Use the browser index.html as template for the mock window
-  const template = fs.readFileSync(join(process.cwd(), 'dist/trasels/browser/index.html'));
+  const template = fs.readFileSync(join(process.cwd(), 'dist/remonic/browser/index.html'));
 
   // Shim for the global window and document objects.
   const window = domino.createWindow(template);
@@ -27,7 +27,7 @@ export function app(): express.Express {
 
 
 
-  const distFolder = join(process.cwd(), 'dist/trasels/browser');
+  const distFolder = join(process.cwd(), 'dist/remonic/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)

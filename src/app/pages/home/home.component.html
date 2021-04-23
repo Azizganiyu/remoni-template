@@ -1,7 +1,105 @@
-<div #home>
+<section class="banner">
   <app-banner></app-banner>
-</div>
-<div #services>
+
+  <div class="container about mt-5 mb-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h6>Who are we</h6>
+        <h3>Remonic Manufacturing Co. Nig. Ltd</h3>
+      </div>
+
+      <div class="col-md-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A praesentium quas laboriosam eum ex maiores beatae commodi dicta quam illo nostrum, facere ut exercitationem impedit architecto facilis saepe, est modi.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="product">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-5">
+          <h6>Our products</h6>
+          <h4>Each and every formula has been created to suit every skincare need</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rerum, deserunt harum numquam esse impedit autem.</p>
+          <button class="product">Discover</button>
+        </div>
+        <div class="col-md-6">
+          <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide>
+              <div class="slide">
+                <div class="box">
+                  <img class="w-100" src="assets/images/slide1.jpg" alt="">
+                  <div class="title">
+                    <h6>Okin soap laundry</h6>
+                  </div>
+                  <button>Learn More</button>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="slide">
+                <div class="box">
+                  <img class="w-100" src="assets/images/slide2.jpg" alt="">
+                  <div class="title">
+                    <h6>Okin soap herbal</h6>
+                  </div>
+                  <button>Learn More</button>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="slide">
+                <div class="box">
+                  <img class="w-100" src="assets/images/slide3.jpg" alt="">
+                  <div class="title">
+                    <h6>Okin soap child care</h6>
+                  </div>
+                  <button>Learn More</button>
+                </div>
+              </div>
+            </ng-template>
+          </owl-carousel-o>
+      
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4>why <span class="okin">OKIN</span></h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque assumenda cupiditate dignissimos.</p>
+        </div>
+      </div>
+      <div class="row why-row">
+        <div class="col-md-6">
+          <img src="assets/images/why.jpg" alt="">
+        </div>
+        <div class="col-md-6">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, enim provident soluta iure pariatur sapiente similique dignissimos. Ab iste minima illum harum quos, eveniet tempora dicta recusandae consequatur rem officia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 offset-md-2 content">
+              <img src="assets/images/shop.jpg" alt="">
+             <div class="details">
+              <h1>Shop Local.</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus aperiam quasi aut maxime! Minus dicta natus, illum accusamus tempora officiis. Quasi repudiandae deserunt consequuntur aut excepturi ex cum quaerat magnam!</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus aperiam quasi aut maxime! Minus dicta natus, illum accusamus tempora officiis. Quasi repudiandae deserunt consequuntur aut excepturi ex cum quaerat magnam!</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus aperiam quasi aut maxime! Minus dicta natus, illum accusamus tempora officiis. Quasi repudiandae deserunt consequuntur aut excepturi ex cum quaerat magnam!</p>
+             </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- <div #services>
   <app-services></app-services>
 </div>
 <div #about>
@@ -18,4 +116,4 @@
 </div>
 <div #partners>
   <app-partners></app-partners>
-</div>
+</div> -->

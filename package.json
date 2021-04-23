@@ -1,5 +1,5 @@
 {
-  "name": "trasels",
+  "name": "remonic",
   "version": "10.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,10 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev:ssr": "ng run trasels:serve-ssr",
-    "serve:ssr": "node dist/trasels/server/main.js",
-    "build:ssr": "ng build --prod && ng run trasels:server:production",
-    "prerender": "ng run trasels:prerender"
+    "dev:ssr": "ng run remonic:serve-ssr",
+    "serve:ssr": "node dist/remonic/server/main.js",
+    "build:ssr": "ng build --prod && ng run remonic:server:production",
+    "prerender": "ng run remonic:prerender"
   },
   "private": true,
   "dependencies": {

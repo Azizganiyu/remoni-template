@@ -10,7 +10,7 @@ interface accept {
 })
 export class EmailService {
 
-  self: string = "support@trasels.com"
+  self: string = "support@remonic.com"
 
   // setting = {
   //   host:'smtp.gmail.com',
@@ -22,12 +22,12 @@ export class EmailService {
   // }
 
   setting = {
-    host:'mail.trasels.com',
-    username:'support@trasels.com',
-    password:'traselssupport123@admin',
+    host:'mail.remonic.com',
+    username:'support@remonic.com',
+    password:'remonicsupport123@admin',
     secure: false,
     port: 587,
-    from: 'Trasels Media'
+    from: 'Remonic Media'
   }
 
   //url = 'http://localhost:4000/'
@@ -52,7 +52,7 @@ export class EmailService {
   notifySelf(message){
     let data = {
       email: this.self,
-      subject: 'Trasels Media'
+      subject: 'Remonic Media'
     }
     let headers = new HttpHeaders();
     headers.set('Accept', 'application/json');
@@ -76,7 +76,7 @@ export class EmailService {
   }
 
   template(name, text){
-    return `<img style="margin:auto;" src="https://trasels.com/assets/images/logo.png" alt="image" />
+    return `<img style="margin:auto;" src="https://remonic.com/assets/images/logo.png" alt="image" />
     <h4>Hello ${name}</h4><p>${text}</p>`
   }
 }

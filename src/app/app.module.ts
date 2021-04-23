@@ -15,13 +15,7 @@ import { FooterComponent } from './components/layouts/footer/footer.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BannerComponent } from './components/banner/banner.component';
-import { ServicesComponent } from './components/services/services.component';
-import { ABOUTUSComponent } from './components/about-us/about-us.component';
-import { MissionComponent } from './components/mission/mission.component';
-import { WorkCarouselComponent } from './components/work-carousel/work-carousel.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { GetStartedComponent } from './components/get-started/get-started.component';
-import { PartnersComponent } from './components/partners/partners.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -33,12 +27,6 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     PageNotFoundComponent,
     BannerComponent,
-    ServicesComponent,
-    ABOUTUSComponent,
-    MissionComponent,
-    WorkCarouselComponent,
-    GetStartedComponent,
-    PartnersComponent,
     SideNavComponent,
   ],
   imports: [

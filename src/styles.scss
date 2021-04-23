@@ -1,6 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face {
+  font-family: 'poppins-medium';
+  src: url('assets/poppins/Poppins-Medium.ttf');
+}
+@font-face {
+  font-family: 'poppins-light';
+  src: url('assets/poppins/Poppins-Light.ttf');
+}
+@font-face {
+  font-family: 'poppins-bold';
+  src: url('assets/poppins/Poppins-Bold.ttf');
+}
+@font-face {
+  font-family: 'poppins-italic';
+  src: url('assets/poppins/Poppins-Italic.ttf');
+}
+@font-face {
+  font-family: 'poppins-black';
+  src: url('assets/poppins/Poppins-Black.ttf');
+}
+@font-face {
+  font-family: 'poppins-semi-bold';
+  src: url('assets/poppins/Poppins-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'ikaros-regular';
+  src: url('assets/Ikaros_Font_Family_(Fontmirror)/Ikaros-Regular 400.otf');
+}
+
+body{
+  font-family: poppins-medium !important;
+}
+
+
 .owl-theme .owl-nav [class*=owl-] {
   background-color: unset !important;
   font-size: 3em;
+}
+
+.fa-caret-square-left, .fa-caret-square-right{
+  color:  #eb5757 !important;
 }
